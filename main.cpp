@@ -18,10 +18,9 @@ int main(int argc, char* argv[]) {
 		
 	// initialize classes
 	Word_Counter word_counter;
-	Progress_Monitor monitor;
 	
-	// initialize PROGRESS_STATUS members
-	PROGRESS_STATUS *progress = new PROGRESS_STATUS;
+	// initialize Progress_Status members
+	Progress_Status *progress = new Progress_Status;
 	progress->termination_val = word_counter.get_filesize(filename);	
 	progress->current_status = 0;
 	
