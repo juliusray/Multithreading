@@ -17,13 +17,5 @@ const int PROGRESS_WIDTH = 10;
 //thread function
 void *display_progress(void *prog_status);
 
-class Progress_Monitor {
-private: 
-	int num_printed;
-	PROGRESS_STATUS* progress;
-public:
-	Progress_Monitor();
-
-};
 
 #endif
