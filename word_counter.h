@@ -11,11 +11,11 @@
 class Word_Counter {
 private:
 	long word_count;
-	
+
 public:
 	Word_Counter();
-	int get_filesize(ifstream &);
-	long count_words(ifstream &, PROGRESS_STATUS*);
+	int get_filesize(ifstream&);
+	long count_words(ifstream&, Progress_Status*);
 };
 
 

@@ -18,7 +18,7 @@ int Word_Counter::get_filesize(ifstream& file) {
 // counts number of words in a given text file.
 // Also updates PROGRESS_STATUS member, current_status, by 
 // retrieving its current location in the file using tellg()
-long Word_Counter::count_words(ifstream &file, PROGRESS_STATUS *progress) {
+long Word_Counter::count_words(ifstream &file, Progress_Status *progress) {
 	char current_char;
 	while (!file.eof()) {
 		progress->current_status = file.tellg();
